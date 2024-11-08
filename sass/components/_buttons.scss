@@ -1,0 +1,41 @@
+.btn {
+    background-color: $redColor;
+    font-weight: bold;
+    border-radius: 15px;
+    cursor: pointer;
+    padding: 10px 10px;
+    font-size: 18px;
+    border: none;
+    transition: .3s;
+    color: #fff;
+    text-align: center;
+    width: 120px;
+
+    &:hover {
+        background-color: red;
+    }
+}
+
+
+.bars {
+    position: absolute;
+    left: 50%;
+    cursor: pointer;
+    transform: translateX(-50%);
+    padding: 7px;
+    transition: .4s;
+
+    span {
+        display: block;
+        background-color: $redColor;
+        width: 20px;
+        height: 2px;
+        margin-top: 4px;
+    }
+    @media (min-width: #{$minSmall + 1px}) {
+        & {
+            display: none;
+        }
+    }
+}
+

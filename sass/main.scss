@@ -1,0 +1,27 @@
+// Variables
+@import '../sass/helpers/variables';
+// Mixins
+@import '../sass/helpers/mixins';
+// Functions
+@import '../sass/helpers/functions';
+
+
+// Grid System
+@import '../sass/layout/grid';
+
+// Headings
+@import '../sass/components/headings.scss';
+// Buttons
+@import '../sass/components/buttons.scss';
+
+// Global Page
+@import '../sass/pages/global';
+// Header
+@import '../sass/layout/header';
+// Page
+@import '../sass/pages/home-page';
+// Buttons
+@import '../sass/components/buttons';
+// Footer
+@import '../sass/layout/footer';
+

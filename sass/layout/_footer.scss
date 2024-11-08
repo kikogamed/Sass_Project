@@ -1,0 +1,105 @@
+.footer {
+    background-color: $greyColor;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: 50px;
+
+    h3 {
+        color: #666;
+    }
+
+    .gallery, 
+    .info,
+    .contact {
+        float: left;
+    }
+    
+    .gallery {
+        width: 50%;
+
+        .box {
+            margin-bottom: 30px;
+
+            h4 {
+                color: $redColor;
+                margin-bottom: -10px;
+
+                @media(max-width: 582px) {
+                    text-align: center;
+                }
+            }
+            p {
+                color: #999;
+                width: 80%;
+                line-height: 1.7;
+
+                @media(max-width: 582px) {
+                    & {
+                        transform: translateX(-50%);
+                        margin-left: 50%;
+                        text-align: center;
+                    }
+                }
+            }
+
+            img {
+                float: left;
+                width: 100px;
+                height: 100px;
+                margin-right: 20px;
+
+                @media(max-width: 582px) {
+                    float: none;
+                    margin-left: 50%;
+                    transform: translateX(-50%);
+                }
+            }
+
+            
+        }
+    }
+
+    .info {
+        width: 25%;
+
+        p {
+            color: #999;
+        }
+
+        h4 {
+            color: $redColor;
+        }
+    }
+
+    .contact {
+        width: 25%;
+
+        input,
+        textarea {
+            border: none;
+            outline: none;
+            padding: 20px;
+            border-radius: 15px;
+            margin-bottom: 10px;
+            width: 250px;
+
+            &::placeholder {
+                color: #999;
+            }
+        }
+        textarea {
+            height: 150px;
+            resize: none;
+        }
+    }
+
+    @media (max-width: $minMedium) {
+        .gallery {
+            width: (100%);
+        }
+        .contact,
+        .info {
+            width: 50%;
+        } 
+    }
+}
